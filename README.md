@@ -19,7 +19,7 @@ Esta API permite registro, login, consulta de usuários e transferências de val
 - `POST /auth/register` — Registro de usuário
 - `POST /auth/login` — Login de usuário
 - `GET /users` — Consulta de usuários
-- `POST /transfer` — Transferência de valores
+- `POST /transfers` — Transferência de valores
 - `GET /api-docs` — Documentação Swagger
 
 ## Regras de Negócio

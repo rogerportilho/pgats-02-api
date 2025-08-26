@@ -1,6 +1,6 @@
 const { users, transfers } = require('../model/db');
 
-exports.transfer = (req, res) => {
+exports.transfers = (req, res) => {
   const { from, to, value } = req.body;
   if (!from || !to || typeof value !== 'number') {
     return res.status(400).json({ message: 'Campos obrigatórios: from, to, value.' });

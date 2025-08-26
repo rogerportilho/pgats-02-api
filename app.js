@@ -12,6 +12,6 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 app.use('/auth', authController);
 app.use('/users', userController);
-app.use('/transfer', transferController);
+app.use('/transfers', transferController);
 
 module.exports = app;

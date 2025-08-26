@@ -1,6 +1,22 @@
-{
+{ 
+  "name": "pgats-02-api",
+  "version": "1.0.0",
+  "description": "API para login, registro, consulta de usuários e transferências.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha \"test/**/*.test.js\" --timeout 10000"
+  },
+  "author": "Rogerio Portilho",
+  "license": "ISC",
+  "keywords": [],
+  "type": "commonjs",
   "dependencies": {
+    "chai": "^6.0.1",
     "express": "^5.1.0",
+    "mocha": "^11.7.1",
+    "sinon": "^21.0.0",
+    "supertest": "^7.1.4",
     "swagger-ui-express": "^5.0.1"
   }
 }

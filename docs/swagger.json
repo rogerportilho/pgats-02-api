@@ -80,7 +80,7 @@
         }
       }
     },
-    "/transfer": {
+    "/transfers": {
       "post": {
         "summary": "Transferir valores",
         "requestBody": {
