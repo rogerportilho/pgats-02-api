@@ -5,7 +5,7 @@ const { expect } = require('chai');
 
 describe('Transfer Controller', () => {
     describe('POST /transfers', () => {
-        it('Quando informo remetente e destinatário inexistentes recebo 400', async () =>{
+        it('Quando informo remetente e destinatário inexistentes recebo 404', async () =>{
             const response = await request(app)
                 .post('/transfers')
                 .send({
@@ -14,6 +14,7 @@ describe('Transfer Controller', () => {
                     value: 100
             });
             expect(response.status).to.equal(404);
+            expect(response.body).to.have.property('error', 'Usuário remetente ou destinatário não encontrado.');
         });
     });
 
