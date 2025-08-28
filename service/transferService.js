@@ -8,7 +8,7 @@ exports.transfers = (req, res) => {
   const sender = users.find(u => u.username === from);
   const recipient = users.find(u => u.username === to);
   if (!sender || !recipient) {
-    return res.status(404).json({ error: 'Usuário remetente ou destinatário não encontrado.' });
+    return res.status(404).json({ error: 'Usuário remetente destinatário não encontrado.' });
   }
   if (sender.saldo < value) {
     return res.status(400).json({ error: 'Saldo insuficiente.' });
