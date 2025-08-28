@@ -19,5 +19,5 @@ exports.transfers = (req, res) => {
   sender.saldo -= value;
   recipient.saldo += value;
   transfers.push({ from, to, value, date: new Date() });
-  res.json({ error: 'Transferência realizada com sucesso.' });
+  res.status(201).json({ from, to, value, message: 'Transferência realizada com sucesso.' });
 };
